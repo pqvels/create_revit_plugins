@@ -19,7 +19,7 @@ namespace MyRevitCommands
             var uidoc = uiapp.ActiveUIDocument;
             var doc = uidoc.Document;
 
-            //Mainn code
+            //Main code
 
 
 

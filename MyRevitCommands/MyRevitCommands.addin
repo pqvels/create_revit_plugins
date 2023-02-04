@@ -10,7 +10,7 @@
     <Text>GetElementId</Text>
     <Description>Get the Id from an element</Description>
     <VendorId>PavelS</VendorId>
-    <VendorDescription>@Learndynamo</VendorDescription>
+    <VendorDescription>@pqvels</VendorDescription>
     <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
   </AddIn>
 
@@ -24,7 +24,113 @@
 		<Text>CollectWindows</Text>
 		<Description>asdf</Description>
 		<VendorId>PavelS</VendorId>
-		<VendorDescription>@Learndynamo</VendorDescription>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			608B3740-009C-485D-B4FC-9995E77F3797
+		</AddInId>
+		<FullClassName>MyRevitCommands.DeleteElement</FullClassName>
+		<Text>DeleteElement</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			D955B2FF-DE5F-49A0-BB86-CB5DD5AC1C87
+		</AddInId>
+		<FullClassName>MyRevitCommands.PlaceFamily</FullClassName>
+		<Text>PlaceFamily</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			66719367-4B9C-4664-8A8F-FD1D8D24ED00
+		</AddInId>
+		<FullClassName>MyRevitCommands.test_PlaceFamily</FullClassName>
+		<Text>test_PlaceFamily</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			6FE4B70E-22E9-4377-AA4E-019B0AB8CB49
+		</AddInId>
+		<FullClassName>MyRevitCommands.PlaceLineElement</FullClassName>
+		<Text>PlaceLineElement</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			AB404F19-2EA8-4FFF-A4D1-DE786657937C
+		</AddInId>
+		<FullClassName>MyRevitCommands.GetParameter</FullClassName>
+		<Text>GetParameter</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			0E4D388E-07D8-4060-AC1C-8C8E07EB158F
+		</AddInId>
+		<FullClassName>MyRevitCommands.ChangeLocation</FullClassName>
+		<Text>ChangeLocation</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			0713A3E2-08DB-407B-B8EB-AE54E87DB0C9
+		</AddInId>
+		<FullClassName>MyRevitCommands.EditElement</FullClassName>
+		<Text>EditElement</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			9488A9F8-9CAA-437B-B8D2-81ECA5398663
+		</AddInId>
+		<FullClassName>MyRevitCommands.SelectGeometry</FullClassName>
+		<Text>SelectGeomentry</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
 		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
 	</AddIn>
 </RevitAddIns>
