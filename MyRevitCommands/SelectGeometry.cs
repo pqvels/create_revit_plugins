@@ -50,7 +50,7 @@ namespace MyRevitCommands
 
                         }
                         string af = UnitUtils.ConvertFromInternalUnits(area, UnitTypeId.SquareMeters).ToString();
-                        //area = af;
+                        //area = af;dsf
                         //ForgeTypeId forgeTypeId = area.GetType();
                         //area = UnitUtils.ConvertFromInternalUnits(area, ).ToString();
                         //area = area.ToString();
