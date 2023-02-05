@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
+using Aspose.Cells.Charts;
 
 namespace MyRevitCommands
 {
     [TransactionAttribute(TransactionMode.Manual)]
-    public class _PlaceLoopElement : IExternalCommand
+    public class PlaceLoopElement : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -19,13 +20,15 @@ namespace MyRevitCommands
 
             //Get Document
             Document doc = uidoc.Document;
-
             //Get Level
             Level level = new FilteredElementCollector(doc)
                 .OfCategory(BuiltInCategory.OST_Levels)
                 .WhereElementIsNotElementType()
                 .Cast<Level>()
                 .First(x => x.Name == "Ground Floor");
+            //ElementId level1 = level.get_Parameter() ;
+
+
 
             //Create points
 
@@ -50,26 +53,40 @@ namespace MyRevitCommands
 
             //Wall wall = new Wall().Create(doc,curves,,level.GetTypeId,)
             //Create Curve Loop
-             CurveLoop crvloop = CurveLoop.Create(curves);
-            //double offset = UnitUtils.ConvertToInternalUnits();
+            CurveLoop crvLoop = CurveLoop.Create(curves);
+            List<CurveLoop> curvelooplist = new List<CurveLoop>();
+            curvelooplist.Add(crvLoop);
+            double offset = UnitUtils.ConvertToInternalUnits(135, UnitTypeId.Millimeters);
+            CurveLoop offsetcrv = CurveLoop.CreateViaOffset(crvLoop, offset, new XYZ(0, 0, 1));
 
-
+            /* CurveArray cArray = new CurveArray();
+            foreach (Curve c in offsetcrv)
+            {
+                cArray.Append(c);
+            }
+            */
+            bool y = true;
+            //
+            //      https://www.revitapidocs.com/2023/3eebff6a-ccfa-d4ab-fcf8-239d4d2ec8de.htm
+            //      
+            //Reference pickedObj = uidoc. ;
+            ElementId deffloortype = Autodesk.Revit.DB.Floor.GetDefaultFloorType(doc, y);
+            ElementId levelId = level.Id;
 
             try
             {
-                using (Transaction trans = new Transaction(doc, "Place Family"))
+                /* Reference pickedObj = uidoc.Selection.PickObject(Autodesk.Revit.UI.Selection.ObjectType.Element);
+
+                ElementId eleId = pickedObj.ElementId;
+                */
+                using (Transaction trans = new Transaction(doc, "Create Floor"))
                 {
                     trans.Start();
 
-                    foreach (Curve c in curves)
-                    {
-                        Wall.Create(doc, c, level.Id, false);
-
-                    }
-
-
-
-
+                    //doc.Create.NewFloor(cArray, false);
+                    
+                    Autodesk.Revit.DB.Floor.Create(doc, curvelooplist, deffloortype, levelId);
+                    
                     trans.Commit();
                 }
 

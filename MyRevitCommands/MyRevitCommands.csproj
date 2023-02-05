@@ -57,7 +57,7 @@
     <Compile Include="SelectGeometry.cs" />
     <Compile Include="EditElement.cs" />
     <Compile Include="GetParameter.cs" />
-    <Compile Include="_PlaceLoopElement.cs" />
+    <Compile Include="PlaceLoopElement.cs" />
     <Compile Include="CollectorWindows.cs" />
     <Compile Include="DeleteElement.cs" />
     <Compile Include="GetElementId.cs" />
