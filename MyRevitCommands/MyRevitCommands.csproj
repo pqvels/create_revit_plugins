@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeLocation.cs" />
+    <Compile Include="ElementIntersection.cs" />
+    <Compile Include="PlanView.cs" />
+    <Compile Include="ProjectRay.cs" />
     <Compile Include="SelectGeometry.cs" />
     <Compile Include="EditElement.cs" />
     <Compile Include="GetParameter.cs" />

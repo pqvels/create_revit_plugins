@@ -146,4 +146,43 @@
 		<VendorDescription>@pqvels</VendorDescription>
 		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			1A885A8A-5486-4EEF-9989-2E4B0AB68727
+		</AddInId>
+		<FullClassName>MyRevitCommands.ElementIntersection</FullClassName>
+		<Text>ElementIntersection</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			BB6D29B1-0138-401F-B88F-36E947709C9A
+		</AddInId>
+		<FullClassName>MyRevitCommands.ProjectRay</FullClassName>
+		<Text>ProjectRay</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			C9B1ACE3-2C40-44F4-8AD9-F5DBE83A8395
+		</AddInId>
+		<FullClassName>MyRevitCommands.PlanView</FullClassName>
+		<Text>PlanView</Text>
+		<Description>asdf</Description>
+		<VendorId>PavelS</VendorId>
+		<VendorDescription>@pqvels</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
 </RevitAddIns>
